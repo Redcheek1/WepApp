@@ -35,7 +35,18 @@
            }
         }
            alert( '1~100 사이의 짝수 합은  ' + sum );
+           function my_sum( start, stop, step ) {
+               let sum = 0;
+               for ( let i = start; i <= stop; i+=step ) {
+                   sum += i;
+               }
+               return sum;
+            }
 
+            alert( '1~100 = ' + my_sum( 1, 100, 1 ) );
+            alert( '1~100 = ' + my_sum( 1, 1000, 1 ) );
+            alert( '1~100홀수 = ' + my_sum( 1, 100, 2 ) );
+            alert( '1~100짝수 = ' + my_sum( 2, 100, 2 ) );
         </script>
     </head>
     <body>시계</body>
