@@ -17,6 +17,6 @@ const server = http.createServer( function( request, response ) {
         response.writeHead( 200, { 'content-Type':'text/html; charset=utf-8'} );
         response.end( `var1 = [ ${parsedQuery.var1} ]` );
     } )
-} ).listen( port, funtion() {
+} ).listen( port, function() {
     console.log( `Server is running... [ ${port} ]` );
 } );
