@@ -12,6 +12,3 @@ server.listen( port, function() {
 
 } );
 
-<body>
-    everybody 
-</body>
