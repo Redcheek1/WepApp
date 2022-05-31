@@ -10,7 +10,7 @@ const server = http.createServer( function( request, response) {
     const parseUrl = url.parse( request.url );
     console.log( parseUrl );
 
-    const parsedQuery = querystring.parse( pareUrl.query, '&', '=' );
+    const parsedQuery = querystring.parse( parseUrl.query, '&', '=' );
     console.log( parsedQuery );
 
     console.log( '--- log end ---' );
